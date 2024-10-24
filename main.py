@@ -80,3 +80,4 @@ if __name__ == "__main__":
     view = TextView()
     controller = TextController(model, view)
     controller.run()
+# end
