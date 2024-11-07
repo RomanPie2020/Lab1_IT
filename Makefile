@@ -35,13 +35,8 @@ build:
 
 
 clean:
-	if exist build rmdir /s /q build
+	rm -rf build .pytest_cache __pycache__ main.spec *.egg-info
 
-	if exist __pycache__ rmdir /s /q __pycache__
-
-	if exist main.spec del main.spec
-
-	if exist *.egg-info rmdir /s /q *.egg-info
 
 all: scripts install test build clean
 
