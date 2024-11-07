@@ -25,14 +25,13 @@ scripts:
 	python3 -m venv env
 
 install:
-	./env/Scripts/pip install -r requirements.txt
+	./env/bin/pip install -r requirements.txt
 
 test: 
-	./env/Scripts/pytest -v test.py
+	./env/bin/pytest -v test.py
 
 build:
-	./env/Scripts/pyinstaller --onefile main.py
-
+	./env/bin/pyinstaller --onefile main.py
 
 
 clean:
